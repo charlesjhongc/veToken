@@ -1,0 +1,24 @@
+{
+  "name": "veToken",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:charlesjhongc/veToken.git",
+  "author": "Charles Jhong <charlesjhongc@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0 <21",
+    "yarn": "^1.22.10"
+  },
+  "scripts": {
+    "setup": "yarn install --frozen-lockfile",
+    "check-pretty": "prettier --check .",
+    "lint": "solhint \"contracts/**/*.sol\"",
+    "compile": "forge build --force"
+  },
+  "devDependencies": {
+    "prettier": "^2.6.2",
+    "prettier-plugin-solidity": "^1.0.0-beta.19",
+    "solhint": "^3.3.7",
+    "solhint-plugin-prettier": "^0.0.5"
+  }
+}
